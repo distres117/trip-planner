@@ -4,7 +4,8 @@ var http = require('http'),
 db()
 .then(function(){
   console.log('Db is connected...');
-  http.createServer(require('./app')).listen(3000, function(){
-    console.log('Server is running...');
+  require('./app').listen(3000, function(err){
+    if (err) console.log('error: ', err);
+      console.log('Server is running...');
   });
 });
