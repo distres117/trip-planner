@@ -1,18 +1,5 @@
 {% extends 'layout.html' %}
 {% block content %}
-<select id="hotelselect">
-  {% for hotel in hotels %}
-    <option value="{{hotel.name}}">{{hotel.name}}</option>
-  {% endfor %}
-</select>
-<select id="activityselect">
-  {% for activity in activities %}
-    <option value="{{activity.name}}">{{activity.name}}</option>
-  {% endfor %}
-</select>
-<select id="restaurantselect">
-  {% for restaurant in restaurants %}
-    <option value="{{restaurant.name}}">{{restaurant.name}}</option>
-  {% endfor %}
-</select>
+
+{% include 'sidepanel.html' %}
 {% endblock %}

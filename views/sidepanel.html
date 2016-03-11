@@ -1,0 +1,38 @@
+<div class="col-lg-4 pull-right" id="selection-panel">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Selections</div>
+    <div>
+      <label>Hotels</label>
+      <select class="form-control" id="hotelselect">
+        {% for hotel in hotels %}
+          <option value="{{hotel.name}}">{{hotel.name}}</option>
+        {% endfor %}
+      </select>
+      <button class="btn btn-danger"><span class="glyphicon glyphicon-plus-sign"></span></button>
+    </div>
+  
+
+    <div>
+      <label>Activities</label>
+      <select class="form-control" id="activityselect">
+        {% for activity in activities %}
+          <option value="{{activity.name}}">{{activity.name}}</option>
+        {% endfor %}
+      </select>
+      <button class="btn btn-danger"><span class="glyphicon glyphicon-plus-sign"></span></button>
+    </div>
+
+    <div>
+      <label>Restaurants</label>
+      <select class="form-control" id="restaurantselect">
+        {% for restaurant in restaurants %}
+          <option value="{{restaurant.name}}">{{restaurant.name}}</option>
+        {% endfor %}
+      </select>
+      <button class="btn btn-danger"><span class="glyphicon glyphicon-plus-sign"></span></button>
+    </div>
+
+  </div>
+  
+</div>
