@@ -1,0 +1,47 @@
+<div class="col-md-6 col-lg-12 col-sm-12" id="itinerary-panel">
+<h2 id="it_day"> Day 1 </h2>
+  <div class="panel panel-default">
+    <div class="panel-heading">Itinerary
+      <a href='#' class="btn btn-primary">1</a>
+      <a href='#' class="btn btn-primary">2</a>
+      <a href='#' class="btn btn-primary">3</a>
+      <a href='#' class="btn btn-primary">+</a>
+    </div>
+    <div class="myRow">
+      <label>My Hotel</label>
+        <ul class='list-unstyled clearfix'>
+        {% for hotel in Array(3) %}
+          <li><span>Hotel</span><button class="btn btn-warning btn-xs pull-right ">X</button></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <div class="myRow">
+      <label>My Restaurants</label>
+        <ul class='list-unstyled clearfix'>
+        {% for restaurant in Array(3) %}
+          <li><span>Restaurants</span><button class="btn btn-warning btn-xs pull-right">X</button></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <div class="myRow">
+      <label>My Activities</label>
+        <ul class='list-unstyled clearfix'>
+        {% for activity in Array(3) %}
+          <li><span>Activities</span><button class="btn btn-warning btn-xs pull-right">X</button></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+  </div>
+
+</div>
+
+<div id="day-selection-panel">
+
+
+</div>

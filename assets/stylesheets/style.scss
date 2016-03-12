@@ -1,7 +1,9 @@
-#selection-panel {
-  
+@import 'media.scss';
+
+.sidebar {
+
   select {
-    width:80%; display: inline;  
+    width:80%; display: inline;
     margin: 10px 5px;
   }
   label {
@@ -10,28 +12,45 @@
   }
   button {
     border-radius: 50%;
-    padding: 9px 12px;
   }
+  #selection-panel {
+    button {
+        padding: 9px 12px;
+    }
+  }
+
+  #selection-panel, #itinerary-panel{
+    padding: 10px;
+  }
+  #it_day{
+    text-align: center;
+  }
+  .myRow {
+    padding: 10px;
+
+    &:after{
+      clear: both;
+      display: block;
+      content: ' ';
+    }
+  }
+}
+.clearfix:after{
+  clear: both;
+  display: block;
+  content: ' ';
 }
 .navbar {
   margin-bottom: 0;
   height: 6vh;
 }
-#map-canvas {
-  height: 94vh;
+
+.container {
+  width: 100%;
+  padding: 0;
 }
 
-.sidebar {
-  background-color: yellow;
-  height: 94vh;
-}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 100%;
-    padding: 0;
-  }
-}
 
 body, html{
   // overflow-x: hidden;

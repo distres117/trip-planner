@@ -1,0 +1,33 @@
+$screen-sm-width:  480px;
+$screen-md-width: 970px;
+$screen-lg-width: 1200px;
+
+@media (min-width: $screen-sm-width) {
+  #map-canvas {
+    height: 50vh;
+  }
+
+  .sidebar {
+    background-color: beige;
+  }
+}
+@media (min-width: $screen-md-width) {
+  #map-canvas {
+    height: 50vh;
+  }
+
+  .sidebar {
+    background-color: beige;
+  }
+}
+
+@media (min-width: $screen-lg-width) {
+  #map-canvas {
+    height: 94vh;
+  }
+
+  .sidebar {
+    background-color: beige;
+    height: 94vh;
+  }
+}
