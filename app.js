@@ -4,6 +4,7 @@ var app = express();
 var swig = require('swig');
 var path = require('path');
 var bodyParser = require('body-parser');
+var morgan     = require('morgan');
 
 
 app.set('view engine', 'html');
@@ -11,6 +12,11 @@ app.engine('html', swig.renderFile);
 app.set('views', path.join(__dirname, 'views'));
 
 app.use(express.static('node_modules'));
+
+app.use(express.static('public'));
+app.use(morgan('dev'));
+
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

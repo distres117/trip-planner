@@ -10,6 +10,7 @@ function initialize_gmaps() {
     // get the maps div's HTML obj
     var map_canvas_obj = document.getElementById("map-canvas");
     // initialize a new Google Map with the options
+    console.log(map_canvas_obj);
     var map = new google.maps.Map(map_canvas_obj, mapOptions);
     // Add the marker to the map
     var marker = new google.maps.Marker({
@@ -22,4 +23,5 @@ function initialize_gmaps() {
 
 $(document).ready(function() {
     initialize_gmaps();
+
 });

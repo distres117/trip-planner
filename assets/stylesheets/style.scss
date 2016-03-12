@@ -1,9 +1,39 @@
 #selection-panel {
+  
   select {
     width:80%; display: inline;  
+    margin: 10px 5px;
   }
   label {
     display: block;
+    margin: 5px 5px;
   }
-  
+  button {
+    border-radius: 50%;
+    padding: 9px 12px;
+  }
+}
+.navbar {
+  margin-bottom: 0;
+  height: 6vh;
+}
+#map-canvas {
+  height: 94vh;
+}
+
+.sidebar {
+  background-color: yellow;
+  height: 94vh;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+body, html{
+  // overflow-x: hidden;
+
 }
